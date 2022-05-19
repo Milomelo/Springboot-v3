@@ -18,6 +18,7 @@ import site.metacoding.blogv3.domain.user.User;
 
 @EntityListeners(AuditingEntityListener.class) // 이 부분 추가
 @Entity
+
 public class Category {
 
     @Id
