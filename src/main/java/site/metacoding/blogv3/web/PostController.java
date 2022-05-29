@@ -25,6 +25,14 @@ public class PostController {
 
     private final PostService postService;
 
+    @GetMapping("/post/{id}")
+    public String detail(@PathVariable Integer id, Model model, @AuthenticationPrincipal LoginUser loginUser) {
+
+        Post postEntity = postService.게시글상세보기(id);
+        model.addAttribute("post", postEntity);
+        return "/post/detail";
+    }
+
     @PostMapping("/s/post")
     public String write(PostWriteReqDto postWriteReqDto, @AuthenticationPrincipal LoginUser loginUser) {
 
