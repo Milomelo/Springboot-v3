@@ -38,6 +38,7 @@ public class Post {
     @Lob
     @Column(nullable = true)
     private String content;
+
     @Column(length = 200, nullable = true)
     private String thumnail;
 
