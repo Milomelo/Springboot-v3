@@ -24,7 +24,7 @@ public class PostWriteReqDto {
     @NotBlank
     private String title;
     @NotNull
-    private MultipartFile thumnailFile; // 섬네일은 null 허용
+    private MultipartFile thumnailFile;
     @NotNull
     private String content; // 컨텐트 null 허용
 
