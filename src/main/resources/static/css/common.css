@@ -5,6 +5,8 @@
 
 .my_atag_none:hover {
     text-decoration-line: none;
+    color: black;
+
 }
 
 
@@ -124,6 +126,17 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.my_text_two_line {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 
 @media (max-width: 420px) {
     .my_post_list_item {
