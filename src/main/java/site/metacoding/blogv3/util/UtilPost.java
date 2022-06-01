@@ -20,4 +20,5 @@ public class UtilPost {
 
         return doc.select("body").text();
     }
+
 }
